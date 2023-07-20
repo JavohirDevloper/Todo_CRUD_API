@@ -1,0 +1,36 @@
+### REGISTER USER
+POST http://localhost:8563/users/register
+Content-Type: application/json
+
+{
+  "first_name": "Javohir",
+  "last_name": "Muhammadiyev",
+  "username": "javohir7",
+  "password": "1234"
+}
+
+### LOGIN USER
+POST http://localhost:8563/users/login
+Content-Type: application/json
+
+{
+  "username": "javohir7",
+  "password": "1234"
+}
+
+### GET ME
+GET http://localhost:8563/users/me
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTQyNDllMjk3MTE3M2IwMzkyYTg4In0sImlhdCI6MTY4OTg2ODUxN30.mjKNTqRuK4dZGDI4hkJ7XGWGB0RC6EvihWnx-KEc1p0
+
+### PATCH ME
+PATCH http://localhost:8563/users/me
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTQyNDllMjk3MTE3M2IwMzkyYTg4In0sImlhdCI6MTY4OTg2ODUxN30.mjKNTqRuK4dZGDI4hkJ7XGWGB0RC6EvihWnx-KEc1p0
+Content-Type: application/json
+
+{
+  "first_name": "Orzu"
+}
+
+### DELETE ME
+DELETE http://localhost:8563/users/me
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTQyNDllMjk3MTE3M2IwMzkyYTg4In0sImlhdCI6MTY4OTg2ODUxN30.mjKNTqRuK4dZGDI4hkJ7XGWGB0RC6EvihWnx-KEc1p0

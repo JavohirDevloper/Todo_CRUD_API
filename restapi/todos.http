@@ -1,0 +1,29 @@
+### POST LIST
+POST http://localhost:8563/todo
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTQyNDllMjk3MTE3M2IwMzkyYTg4In0sImlhdCI6MTY4OTg2ODUxN30.mjKNTqRuK4dZGDI4hkJ7XGWGB0RC6EvihWnx-KEc1p0
+Content-Type: application/json
+
+{
+    "name": "LIST 11 NEW 1234"
+}
+
+### GET todo
+GET http://localhost:8563/todo
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTQyNDllMjk3MTE3M2IwMzkyYTg4In0sImlhdCI6MTY4OTg2ODUxN30.mjKNTqRuK4dZGDI4hkJ7XGWGB0RC6EvihWnx-KEc1p0
+
+### GET LIST
+GET http://localhost:8563/todo/64b9593362ece3688fd563f3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTQyNDllMjk3MTE3M2IwMzkyYTg4In0sImlhdCI6MTY4OTg2ODUxN30.mjKNTqRuK4dZGDI4hkJ7XGWGB0RC6EvihWnx-KEc1p0
+
+### GET LIST
+PATCH http://localhost:8563/todo/64b9593362ece3688fd563f3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTQyNDllMjk3MTE3M2IwMzkyYTg4In0sImlhdCI6MTY4OTg2ODUxN30.mjKNTqRuK4dZGDI4hkJ7XGWGB0RC6EvihWnx-KEc1p0
+Content-Type: application/json
+
+{
+    "name": "LIST 1 (updated2)"
+}
+
+### DELETE TODO
+DELETE http://localhost:8563/todo/64b9593362ece3688fd563f3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTQyNDllMjk3MTE3M2IwMzkyYTg4In0sImlhdCI6MTY4OTg2ODUxN30.mjKNTqRuK4dZGDI4hkJ7XGWGB0RC6EvihWnx-KEc1p0
